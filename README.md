@@ -5,7 +5,7 @@ My take on a PHP class for sending mails with Postmarkapp.com
 
 Usage
 -----
-
+``
 $htmlBody = file_get_contents('http://www.google.com');
 $textBody = 'Here the whole of google would have been if you did HTML!';
 
@@ -19,3 +19,4 @@ $mail->setBody($htmlBody, $textBody);
 echo "<pre>";
 print_r($mail->send());
 echo "</pre>";
+``
