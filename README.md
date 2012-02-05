@@ -1,7 +1,7 @@
 Postmark-PHP
 ============
 
-My take on a PHP class for sending mails with Postmarkapp.com
+My take on a PHP class for sending mails with [Postmarkapp.com](http://www.postmarkapp.com)
 
 Usage
 -----
@@ -18,3 +18,13 @@ $mail->setBody($htmlBody, $textBody);
 
 $result = $mail->send();
 </pre>
+
+Wanna attach a file? - Easy!
+
+Just call this nifty little thing:
+
+<pre>
+$mail->attachFile('AwesomeFile.txt', '/path/to/my/file.txt');
+</pre>
+
+Just remember Postmark limits you to 10 MB of attachments total. - No matter the number of files.
