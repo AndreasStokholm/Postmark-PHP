@@ -9,7 +9,7 @@ Usage
 $htmlBody = file_get_contents('http://www.google.com');
 $textBody = 'Here the whole of google would have been, if you did HTML!';
 
-$mail = new Class_Postmark('MY_API_KEY');
+$mail = new Postmark('MY_API_KEY');
 $mail->setFrom('Me &lt;me@example.com&gt;');
 $mail->addTo('you@example.com');
 $mail->addTo('yourfriend@example.com', 'cc');
