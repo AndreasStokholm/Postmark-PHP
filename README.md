@@ -16,7 +16,7 @@ $mail->setSubject('All of google, in your inbox!');
 $mail->setTag('Example');
 $mail->setBody($htmlBody, $textBody);
 
-echo "<pre>";
+echo "`<pre>`";
 print_r($mail->send());
-echo "</pre>";
+echo "`</pre>`";
 </pre>
