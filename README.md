@@ -7,11 +7,13 @@ Usage
 -----
 <pre>
 $htmlBody = file_get_contents('http://www.google.com');
-$textBody = 'Here the whole of google would have been if you did HTML!';
+$textBody = 'Here the whole of google would have been, if you did HTML!';
 
 $mail = new Class_Postmark('MY_API_KEY');
 $mail->setFrom('Me <me@example.com>');
 $mail->addTo('you@example.com');
+$mail->addTo('yourfriend@example.com', 'cc');
+$mail->addTo('yoursecretlover@example.com', 'bcc');
 $mail->setSubject('All of google, in your inbox!');
 $mail->setTag('Example');
 $mail->setBody($htmlBody, $textBody);
