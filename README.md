@@ -1,7 +1,7 @@
 Postmark-PHP
 ============
 
-My take on a PHP class for sending mails with Postmarkapp.com
+My take on a PHP class for sending mails with [Postmarkapp.com](http://www.postmarkapp.com)
 
 Usage
 -----
