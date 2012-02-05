@@ -3,7 +3,6 @@
 * File for Postmark class
 *
 * @author	Andreas Stokholm
-* @since	v0.0.1
 *
 * See licence in bottom of file.
 */
@@ -12,7 +11,7 @@
 * Class for handling interaction with Postmarkapp.com
 *
 * @author	Andreas Stokholm
-* @since	v0.0.1
+* @version	v0.0.1
 */
 
 class Postmark {
