@@ -4,7 +4,7 @@
 *
 * @author	Andreas Stokholm
 *
-* See licence in bottom of file.
+* See license in bottom of file.
 */
 
 /**
