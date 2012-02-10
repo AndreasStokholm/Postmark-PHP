@@ -30,7 +30,7 @@ class Postmark {
 		'Headers'		=> array(),
 		'Attachments'	=> array()
 	);
-	private $test_file = 'testmail_'.uniqid().'.html'; // Default: 'testmail.html'
+	private $test_file = 'testmail.html'; // Default: 'testmail.html'
 
 
 	/**
