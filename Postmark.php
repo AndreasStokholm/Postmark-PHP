@@ -30,7 +30,7 @@ class Postmark {
 		'Headers'		=> array(),
 		'Attachments'	=> array()
 	);
-	private $test_file = 'testmail.html'; // Default: 'testmail.html'
+	private $test_file = 'testmail_'.uniqid().'.html'; // Default: 'testmail.html'
 
 
 	/**
@@ -236,8 +236,8 @@ class Postmark {
 		curl_close($ch);
 
 		if ($test) {
-			if ($test_output = fopen($test_file, 'w')) {
-				if (fwrite($test_output, $this->mail['HtmlBody'])) {
+			if ($test_output = fopen($this->test_file, 'w')) {
+				if (!fwrite($test_output, $this->mail['HtmlBody'])) {
 					return json_encode(array('Failed to write to test file. Is file writable?'));
 				}
 				fclose($test_output);				
