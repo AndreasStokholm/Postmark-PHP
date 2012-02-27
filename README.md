@@ -1,6 +1,8 @@
 Postmark-PHP
 ============
 
+[![endorse](http://api.coderwall.com/andreasstokholm/endorse.png)](http://coderwall.com/andreasstokholm)
+
 My take on a PHP class for sending mails with [Postmarkapp.com](http://www.postmarkapp.com)
 
 The master branch will always contain the latest and most stable release. - I will try not to break anything in here.
